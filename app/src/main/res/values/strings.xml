@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LOLAppV1</string>
+    <string name="brnz">Bronze</string>
+    <string name="silv">Silver</string>
+    <string name="gold">Gold</string>
+    <string name="plat">Platinum</string>
+    <string name="diam">Diamond</string>
+    <string name="mstr">Master</string>
+    <string name="chlg">Challenger</string>
+    <string name="title_map">Map</string>
+    <string name="google_maps_key">
+AIzaSyC_i8qmjn8kZI018Y_BK-NZoRcsNfmhzIc</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

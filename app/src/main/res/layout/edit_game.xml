@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:text="Confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmButton"
+        android:layout_weight="0.07"
+        android:layout_marginBottom="19dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Match Result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/matchResultLabel"
+        android:textStyle="normal|bold"
+        android:textSize="17sp"
+        android:layout_marginBottom="27dp"
+        android:layout_alignBottom="@+id/matchResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/championUsed"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="18dp"
+        android:layout_above="@+id/confirmButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/matchResult"
+        android:layout_marginBottom="66dp"
+        android:layout_above="@+id/championUsed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Champion Used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/champUsedButton"
+        android:textStyle="normal|bold"
+        android:textSize="17sp"
+        android:layout_above="@+id/championUsed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Your Maximum Rank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maxRankLabel"
+        android:textSize="17sp"
+        android:textStyle="normal|bold"
+        android:layout_above="@+id/maxRank"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:textStyle="normal|bold"
+        android:textSize="17sp"
+        android:layout_above="@+id/region"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/region"
+        android:layout_marginBottom="31dp"
+        android:layout_above="@+id/maxRankLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:id="@+id/maxRank"
+        android:layout_above="@+id/matchResultLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/matchIdOnEditScreen"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fontFamily="sans-serif"
+        android:textStyle="normal|bold"
+        android:textSize="17sp" />
+
+</RelativeLayout>

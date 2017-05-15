@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <EditText
+            android:id="@+id/myEditText"
+            android:background="#000000"
+            android:layout_width="290dp"
+            android:layout_height="50dp" />
+        <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchButton"
+            tools:text="Search" />
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.20">
+
+            <TextView
+                android:text="GameID"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/idLabel"
+                android:textStyle="normal|bold"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.20">
+
+            <TextView
+                android:text="Region"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/regionLabel"
+                android:textStyle="normal|bold"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.20">
+
+            <TextView
+                android:text="Rank"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/rankLabel"
+                android:textStyle="normal|bold"
+                android:layout_weight="1"
+                android:textAlignment="viewStart"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.20">
+
+            <TextView
+                android:text="Result"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:id="@+id/resultLabel"
+                android:textStyle="normal|bold"
+                android:layout_weight="1.10"
+                android:textAlignment="viewStart"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.20">
+
+            <TextView
+                android:text="Champion"
+                android:layout_width="46dp"
+                android:layout_height="15dp"
+                android:id="@+id/champLabel"
+                android:textStyle="normal|bold"
+                android:textAlignment="viewStart"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+        <ListView
+            android:id="@+id/gamesList2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:layout_height="490dp"
+            android:layout_width="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

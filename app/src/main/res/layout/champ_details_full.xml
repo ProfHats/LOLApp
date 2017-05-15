@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:orientation="horizontal"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@android:drawable/editbox_dropdown_light_frame"
+            android:layout_marginRight="21dp"
+            android:layout_marginEnd="21dp"
+            android:id="@+id/portrait"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_weight="0.06">
+        <TextView
+            android:text="TextView"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:id="@+id/heroName"
+            android:layout_weight="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="200dp"
+                android:id="@+id/heroTitle"
+                android:layout_weight="1"
+                android:layout_height="35dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/heroName"
+                android:layout_toEndOf="@+id/heroName" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_height="100dp"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:text="Attributes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heroName"
+        android:layout_toLeftOf="@+id/heroTitle"
+        android:layout_toStartOf="@+id/heroTitle"
+        android:layout_marginRight="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="17dp"
+        android:id="@+id/attributes" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="100dp"
+        android:layout_width="280dp">
+
+        <TextView
+            android:layout_width="151dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag2"
+            android:layout_alignBaseline="@+id/tag1"
+            android:layout_alignBottom="@+id/tag1"
+            android:layout_toRightOf="@+id/tag1"
+            android:layout_toEndOf="@+id/tag1"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp" />
+
+        <TextView
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag1"
+            android:layout_alignBaseline="@+id/attributes"
+            android:layout_alignBottom="@+id/attributes"
+            android:layout_toRightOf="@+id/attributes"
+            android:layout_toEndOf="@+id/attributes" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Statistics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attributes"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/statistics" />
+
+    <TextView
+        android:text="Attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/statistics"
+        android:layout_toRightOf="@+id/statistics"
+        android:layout_toEndOf="@+id/statistics"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:id="@+id/attack" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_height="wrap_content"
+        android:id="@+id/attackBar"
+        android:layout_alignTop="@+id/statistics"
+        android:layout_toRightOf="@+id/tag1"
+        android:layout_toEndOf="@+id/tag1"
+        android:layout_width="match_parent" />
+
+    <TextView
+        android:text="Defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/attackBar"
+        android:layout_alignRight="@+id/tag1"
+        android:layout_alignEnd="@+id/tag1"
+        android:id="@+id/defense" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/defenseBar"
+        android:layout_below="@+id/attackBar"
+        android:layout_toRightOf="@+id/defense"
+        android:layout_toEndOf="@+id/defense" />
+
+    <TextView
+        android:text="Magic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/defenseBar"
+        android:layout_alignRight="@+id/tag1"
+        android:layout_alignEnd="@+id/tag1"
+        android:id="@+id/magic" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/magicBar"
+        android:layout_below="@+id/defenseBar"
+        android:layout_toRightOf="@+id/tag1"
+        android:layout_toEndOf="@+id/tag1" />
+
+    <TextView
+        android:text="Difficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/difficulty"
+        android:layout_below="@+id/magicBar"
+        android:layout_toLeftOf="@+id/magicBar"
+        android:layout_toStartOf="@+id/magicBar" />
+
+    <ProgressBar
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/difficultyBar"
+        android:layout_below="@+id/magicBar"
+        android:layout_toRightOf="@+id/difficulty"
+        android:layout_toEndOf="@+id/difficulty" />
+</LinearLayout>
+
+</LinearLayout>

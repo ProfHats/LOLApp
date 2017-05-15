@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="Return To Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/backToHub" />
+
+    <Button
+        android:text="Add a new Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addNewGame" />
+
+    <Button
+        android:text="Clear Your History"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/clearHistory" />
+
+    <Button
+        android:text="View Results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/goToResults" />
+
+    <Button
+        android:text="Map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapButton" />
+
+
+</LinearLayout>
